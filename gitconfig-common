@@ -2,6 +2,8 @@
     path = ~/dotfiles/git-identity-work
 [includeIf "gitdir:~/Personal/"]
     path = ~/dotfiles/git-identity-personal
+[includeIf "gitdir:~/dotfiles/"]
+    path = ~/dotfiles/git-identity-personal
 
 [include]
     path = ~/dotfiles/git-aliases
