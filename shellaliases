@@ -277,3 +277,8 @@ fi
 
 # Alias for parsing structure JSON logs...
 alias plog="jq -r -s 'map(select(.) | .log_level |=  ascii_upcase) | .[] | \"\(.event_timestamp) \(.log_level) \t \(.event_message)\" | @text'"
+
+function cpt-clone {
+  git clone https://github.cicd.cloud.fpdev.io/CPT/${1}.git
+  test -f ./${1}/configure-hooks.sh && (cd ${1} && ./configure-hooks.sh --install)
+}
