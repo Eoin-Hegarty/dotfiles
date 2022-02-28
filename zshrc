@@ -104,7 +104,8 @@ plugins=(
   gitignore
   golang
   iterm2
-  osx
+  macos
+  per-directory-history
   pip
   # pipenv
   pyenv
@@ -118,7 +119,7 @@ plugins=(
   terraform
   textmate
   virtualenv
-  virtualenvwrapper
+  # virtualenvwrapper
 )
 
 source $HOME/dotfiles/powerlevel10k/powerlevel10k.zsh-theme
@@ -146,6 +147,9 @@ fi
 eval "$(pyenv init - --no-rehash zsh)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# For proper imgcat use, comment out the following line:
+# unalias imgcat
+# see https://github.com/eddieantonio/imgcat
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k.zsh.
 [[ ! -f ~/dotfiles/p10k.zsh ]] || source ~/dotfiles/p10k.zsh
