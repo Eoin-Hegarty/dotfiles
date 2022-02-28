@@ -169,7 +169,7 @@ zstyle ':completion:*:*:make:*' tag-order 'targets'
 
 # Partial completion suggestions.
 # https://scriptingosx.com/2019/07/moving-to-zsh-part-5-completions/
-zstyle ':completion:*' list-suffixes zstyle ':completion:*' expand prefix suffix 
+zstyle ':completion:*' list-suffixeszstyle ':completion:*' expand prefix suffix
 
 # The following lines were added by compinstall
 
