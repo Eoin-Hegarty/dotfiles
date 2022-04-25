@@ -4,6 +4,7 @@
 
 # Load user-specific personalisation.
 source ~/dotfiles/personalisation
+source ~/dotfiles/sensitive
 
 # Load paths and environment variables
 source ~/dotfiles/shellvars
