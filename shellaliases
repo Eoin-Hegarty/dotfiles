@@ -277,3 +277,6 @@ fi
 
 # Alias for parsing structure JSON logs...
 alias plog="jq -r -s 'map(select(.) | .log_level |=  ascii_upcase) | .[] | \"\(.event_timestamp) \(.log_level) \t \(.event_message)\" | @text'"
+
+# Alias for make to allow pip install with no venv
+alias pmake="PIP_REQUIRE_VIRTUALENV=false make"
