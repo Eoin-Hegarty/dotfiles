@@ -1,11 +1,6 @@
 # Interactive shell configuration.
 
 ##############################################################################
-# Play nice with vscode
-##############################################################################
-[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
-
-##############################################################################
 # ZShell History Configuration
 ##############################################################################
 export HISTFILE=~/.zsh_history   # Where to save history to disk
@@ -199,6 +194,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-# Created by `pipx` on 2023-01-31 15:09:42
-export PATH="$PATH:/Users/eoin.hegarty/.local/bin"
